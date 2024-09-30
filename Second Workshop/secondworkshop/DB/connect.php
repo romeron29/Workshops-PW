@@ -1,0 +1,12 @@
+<?php 
+
+function connection() {
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $bd = "workshop";
+
+    $connect = mysqli_connect($host, $user, $pass);
+    mysqli_select_db($connect, $bd);
+    return $connect;
+}
